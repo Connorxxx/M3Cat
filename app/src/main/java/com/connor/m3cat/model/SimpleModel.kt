@@ -18,7 +18,8 @@ class SimpleModel() : BaseObservable() {
 
     fun getData(): MutableList<RvText> {
         return mutableListOf<RvText>(
-            RvText("ViewPage", 0)
+            RvText("ViewPage with FragmentState", 0),
+            RvText("ViewPage with RecyclerView", 1)
         )
     }
 

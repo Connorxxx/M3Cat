@@ -38,12 +38,14 @@ class HomeFragment : EngineFragment<FragmentHomeBinding>(R.layout.fragment_home)
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
 
+
         })
         binding.rv.setup {
             addType<RvText>(R.layout.item_home)
             onClick(R.id.item_tv) {
                 when (bindingAdapterPosition) {
                     0 -> findNavController().navigate(R.id.action_homeFragment_to_tabFragment)
+                    1 -> findNavController().navigate(R.id.action_homeFragment_to_rvViewPageFragment)
                 }
             }
         }
