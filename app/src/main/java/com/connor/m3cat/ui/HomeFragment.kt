@@ -1,15 +1,11 @@
 package com.connor.m3cat.ui
 
 import android.util.Log
-import android.view.View
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.connor.m3cat.R
 import com.connor.m3cat.databinding.FragmentHomeBinding
 import com.connor.m3cat.model.RvText
 import com.connor.m3cat.model.SimpleModel
-import com.drake.brv.utils.bindingAdapter
-import com.drake.brv.utils.linear
 import com.drake.brv.utils.models
 import com.drake.brv.utils.setup
 import com.drake.engine.base.EngineFragment
@@ -46,6 +42,8 @@ class HomeFragment : EngineFragment<FragmentHomeBinding>(R.layout.fragment_home)
                 when (bindingAdapterPosition) {
                     0 -> findNavController().navigate(R.id.action_homeFragment_to_tabFragment)
                     1 -> findNavController().navigate(R.id.action_homeFragment_to_rvViewPageFragment)
+                    2 -> findNavController().navigate(R.id.action_homeFragment_to_netKSFragment)
+                    3 -> findNavController().navigate(R.id.action_homeFragment_to_serializeFragment)
                 }
             }
         }

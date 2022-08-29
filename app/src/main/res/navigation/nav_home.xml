@@ -15,22 +15,28 @@
         <action
             android:id="@+id/action_homeFragment_to_rvViewPageFragment"
             app:destination="@id/rvViewPageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_netKSFragment"
+            app:destination="@id/netKSFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_serializeFragment"
+            app:destination="@id/serializeFragment" />
     </fragment>
     <fragment
         android:id="@+id/tabFragment"
         android:name="com.connor.m3cat.ui.TabFragment"
         android:label="fragment_tab"
-        tools:layout="@layout/fragment_tab" >
-        <action
-            android:id="@+id/action_tabFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_tab" />
     <fragment
         android:id="@+id/rvViewPageFragment"
         android:name="com.connor.m3cat.ui.RvViewPageFragment"
-        android:label="RvViewPageFragment" >
-        <action
-            android:id="@+id/action_rvViewPageFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+        android:label="RvViewPageFragment" />
+    <fragment
+        android:id="@+id/netKSFragment"
+        android:name="com.connor.m3cat.ui.NetKSFragment"
+        android:label="NetKSFragment" />
+    <fragment
+        android:id="@+id/serializeFragment"
+        android:name="com.connor.m3cat.ui.SerializeFragment"
+        android:label="SerializeFragment" />
 </navigation>

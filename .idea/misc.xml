@@ -6,9 +6,14 @@
         <entry key="../../../../layout/custom_preview.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/tab_rounded_line.xml" value="0.2085" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.207757568359375" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_base.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_data_store.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2306182861328125" />
+        <entry key="app/src/main/res/layout/fragment_net_k_s.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_page.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_rv_view_page.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_serialize.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_tab.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/item_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.19610507246376813" />

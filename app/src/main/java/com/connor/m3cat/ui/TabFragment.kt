@@ -1,25 +1,14 @@
 package com.connor.m3cat.ui
 
-import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.activity.addCallback
-import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.connor.m3cat.R
 import com.connor.m3cat.adapter.ViewPagerFragmentStateAdapter
 import com.connor.m3cat.databinding.FragmentTabBinding
 import com.drake.engine.base.EngineFragment
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
 
 class TabFragment : EngineFragment<FragmentTabBinding>(R.layout.fragment_tab) {
 
@@ -55,9 +44,6 @@ class TabFragment : EngineFragment<FragmentTabBinding>(R.layout.fragment_tab) {
     }
 
     override fun initData() {
-        val callback = requireActivity().onBackPressedDispatcher.addCallback(this) {
-            findNavController().popBackStack()
-        }
     }
 
     override fun onClick(v: View) {
@@ -69,12 +55,4 @@ class TabFragment : EngineFragment<FragmentTabBinding>(R.layout.fragment_tab) {
             }
         }
     }
-
-//    override fun onBackPressed(): Boolean {
-//
-//        return findNavController().popBackStack()
-//    }
-
-
-
 }
