@@ -36,12 +36,16 @@ abstract class EngineFragment<B : ViewDataBinding>(@LayoutRes contentLayoutId: I
     protected abstract fun initData()
     override fun onClick(v: View) {}
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding = DataBindingUtil.bind(view)!!
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         val engineActivity = (requireActivity() as? EngineActivity<*>)
         engineActivity?.onBackPressedDispatcher?.addCallback(this) {
             findNavController().navigateUp()
         }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding = DataBindingUtil.bind(view)!!
        // engineActivity?.onBackPressed(this::onBackPressed)
 
         try {
@@ -52,8 +56,8 @@ abstract class EngineFragment<B : ViewDataBinding>(@LayoutRes contentLayoutId: I
         }
     }
 
-    @Deprecated("建议使用onBackPressedDispatcher", ReplaceWith("requireActivity().onBackPressedDispatcher"))
-    open fun onBackPressed(): Boolean {
-        return false
-    }
+//    @Deprecated("建议使用onBackPressedDispatcher", ReplaceWith("requireActivity().onBackPressedDispatcher"))
+//    open fun onBackPressed(): Boolean {
+//        return false
+//    }
 }
