@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_homeFragment_to_serializeFragment"
             app:destination="@id/serializeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_channelFragment"
+            app:destination="@id/channelFragment" />
     </fragment>
     <fragment
         android:id="@+id/tabFragment"
@@ -39,4 +42,9 @@
         android:id="@+id/serializeFragment"
         android:name="com.connor.m3cat.ui.SerializeFragment"
         android:label="SerializeFragment" />
+    <fragment
+        android:id="@+id/channelFragment"
+        android:name="com.connor.m3cat.ui.ChannelFragment"
+        android:label="fragment_channel"
+        tools:layout="@layout/fragment_channel" />
 </navigation>

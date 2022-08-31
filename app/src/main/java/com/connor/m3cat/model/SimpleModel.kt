@@ -21,7 +21,8 @@ class SimpleModel() : BaseObservable() {
             RvText("ViewPage with FragmentState", 0),
             RvText("ViewPage with RecyclerView", 1),
             RvText("Net with ks", 2),
-            RvText("Serialize", 3)
+            RvText("Serialize", 3),
+            RvText("Channel", 4)
         )
     }
 

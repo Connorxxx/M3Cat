@@ -8,6 +8,7 @@ import com.connor.m3cat.ks.Data
 import com.connor.m3cat.model.Model
 import com.connor.m3cat.model.ParcelableModel
 import com.connor.m3cat.model.SerializableModel
+import com.drake.channel.receiveEvent
 import com.drake.engine.base.EngineFragment
 import com.drake.serialize.intent.openActivity
 import com.drake.serialize.serialize.serial
@@ -33,6 +34,9 @@ class SerializeFragment : EngineFragment<FragmentSerializeBinding>(R.layout.frag
         binding.serializable = serializableModel
         liveData.observe(this) {
             binding.tvLiveData.text = it
+        }
+        receiveEvent<String> {
+            binding.tvRecChannel.text = it
         }
     }
 

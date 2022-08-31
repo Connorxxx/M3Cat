@@ -44,6 +44,7 @@ class HomeFragment : EngineFragment<FragmentHomeBinding>(R.layout.fragment_home)
                     1 -> findNavController().navigate(R.id.action_homeFragment_to_rvViewPageFragment)
                     2 -> findNavController().navigate(R.id.action_homeFragment_to_netKSFragment)
                     3 -> findNavController().navigate(R.id.action_homeFragment_to_serializeFragment)
+                    4 -> findNavController().navigate(R.id.action_homeFragment_to_channelFragment)
                 }
             }
         }

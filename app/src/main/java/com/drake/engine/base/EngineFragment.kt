@@ -56,8 +56,8 @@ abstract class EngineFragment<B : ViewDataBinding>(@LayoutRes contentLayoutId: I
         }
     }
 
-//    @Deprecated("建议使用onBackPressedDispatcher", ReplaceWith("requireActivity().onBackPressedDispatcher"))
-//    open fun onBackPressed(): Boolean {
-//        return false
-//    }
+    @Deprecated("建议使用onBackPressedDispatcher", ReplaceWith("requireActivity().onBackPressedDispatcher"))
+    open fun onBackPressed(): Boolean {
+        return false
+    }
 }

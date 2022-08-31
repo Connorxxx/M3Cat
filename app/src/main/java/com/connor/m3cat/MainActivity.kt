@@ -31,7 +31,7 @@ class MainActivity : EngineActivity<ActivityMainBinding>(R.layout.activity_main)
     override fun onBackPressed() {
         if (!isActiveFragment(HomeFragment::class.java))
             super.onBackPressed()
-        else finish()
+        else finishTransition()
     }
 
     fun <F : Fragment> isActiveFragment(fragmentClass: Class<F>): Boolean {
